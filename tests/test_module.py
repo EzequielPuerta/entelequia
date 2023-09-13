@@ -9,8 +9,10 @@ from entelequia.system.system_interface import GenericSystemInterface
 class MockSystem(GenericSystem):
     pass
 
+
 class MockSystemInterface(GenericSystemInterface):
     accessor: str = "mock_system"
+
 
 mock_system = MockSystem()
 mock_interface = MockSystemInterface()
@@ -24,6 +26,7 @@ def test_module_wrong_creation():
 
     with pytest_raises(AssertionError):
         WrongModule(system=mock_system, interface=mock_interface)
+
 
 def test_module_right_creation():
     @define

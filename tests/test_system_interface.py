@@ -10,8 +10,10 @@ def test_system_interface_wrong_creation():
     with pytest_raises(TypeError):
         WrongSystemInterface()
 
+
 def test_system_interface_right_creation():
     accessor_name = "ok_system"
+
     class OkSystemInterface(GenericSystemInterface):
         accessor: str = accessor_name
 
