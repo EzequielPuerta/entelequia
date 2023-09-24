@@ -1,5 +1,5 @@
-from entelequia.system.system_interface import GenericSystemInterface
+# from entelequia.system.system_interface import GenericSystemInterface
 
 
-class TimeSystemInterface(GenericSystemInterface):
-    accessor: str = "time_system"
+# class TimeSystemInterface(GenericSystemInterface):
+#     accessor: str = "time_system"
